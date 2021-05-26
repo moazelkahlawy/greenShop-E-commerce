@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <title>Grean Shop</title>
+</head>
+
+<body>
+  <!-- start header -->
+  <header>
+    <div class="container-fluid information ">
+      <div>
+        <i class="fa fa-phone-alt"><span>+1 123 456 789</span></i>
+        <i class="fas fa-envelope"><span>info@company.com</span></i>
+      </div>
+      <div>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-behance"></i>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand text-uppercase" href="home.html"><span>Green</span>shop</a>
+      <button onclick="buttonChange()" type="button" class="navbar-toggler nav-button" data-toggle="collapse"
+        data-target="#myNavbar">
+        <div class=" line1"></div>
+        <div class=" line2"></div>
+        <div class=" line3"></div>
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item ">
+            <a class="nav-link active" href="home.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Pages
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="home.html">Homepage</a>
+              <a class="dropdown-item" href="Shop-Gird-leftsidebar.html">Category</a>
+              <a class="dropdown-item" href="Shop-grid-full.html">Full Shopping</a>
+              <a class="dropdown-item" href="Shop-products-name.html">Product detail</a>
+              <a class="dropdown-item" href="Shop-cart.html">Shopping cart</a>
+              <a class="dropdown-item" href="Shop-checkout.html">Checkout</a>
+              <a class="dropdown-item" href="Shop-wishlist.html">Wishlist</a>
+              <a class="dropdown-item" href="Shop-cart.html">Cart</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kids</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">jewellery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Accessories</a>
+          </li>
+        </ul>
+        <div class="my-2 my-lg-0 nav-fa">
+          <a href="Shop-cart.html" class="shopping"><i class="fa fa-shopping-cart mr-4"></i></a>
+          <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+          <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- end header -->
+  <!-- start content products -->
+  <section class="content-products pt-3 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="home.html">page</a></li>
+              <li class="breadcrumb-item"><a href="Shop-grid-full.html">shop</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="row border-bottom">
+        <div class="col-lg-6">
+          <p class="text-small text-muted mb-0">Showing 1–12 of 44 results</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="dropdown-shopping">
+            <div class="dropdown d-flex justify-content-end align-items-center">
+              <div class="status-changed pr-3">
+                <a href="Shop-grid-full.html"><i class="fas fa-th-large"></i></a>
+                <a href="Shop-list-full.html"><i class="fas fa-th pl-2"></i></a>
+              </div>
+              <button class="btn dropdown-toggle button-select" type="button" id="dropdownMenuButton"
+                style="color: #777;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Default sorting
+              </button>
+              <div class="dropdown-menu menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Popularity</a>
+                <a class="dropdown-item" href="#">Price: Low to High</a>
+                <a class="dropdown-item" href="#">Price: High to Low</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="products py-5">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12 py-lg-0 py-3">
+            <div class="product">
+              <a href="Shop-products-name.html"><img src="img/pexels-photo-2146344.jpeg"></a>
+              <div class="icons">
+                <a href="Shop-cart.html" class="text-decoration-none"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fas fa-heart"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fas fa-retweet"></i></a>
+              </div>
+              <div class="include">
+                <a href="Shop-products-name.html">
+                  <div>Le Bomber White jacketh</div>
+                </a>
+                <div class="price">$15.00</div>
+                <div class="star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 py-lg-0 py-3">
+            <div class="product">
+              <a href="Shop-products-name.html"><img src="img/pexels-photo-952214.jpeg"></a>
+              <div class="icons">
+                <a href="Shop-cart.html" class="text-decoration-none"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fas fa-heart"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fas fa-retweet"></i></a>
+              </div>
+              <div class="include">
+                <a href="Shop-products-name.html">
+                  <div>Women’s Navy Blue Jacket</div>
+                </a>
+                <div class="price">$15.00</div>
+                <div class="star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 py-lg-0 py-3">
+            <div class="product">
+              <a href="Shop-products-name.html"><img src="img/photo-1559329668-389452d01c02.jpg"></a>
+              <div class="icons">
+                <a href="Shop-cart.html" class="text-decoration-none"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fas fa-heart"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fas fa-retweet"></i></a>
+              </div>
+              <div class="include">
+                <a href="Shop-products-name.html">
+                  <div>Beautiful women's watch</div>
+                </a>
+                <div class="price">$15.00</div>
+                <div class="star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 py-lg-0 py-3">
+            <div class="product">
+              <a href="Shop-products-name.html"><img src="img/photo-1494028698538-2cd52a400b17.jpg"></a>
+              <div class="icons">
+                <a href="Shop-cart.html" class="text-decoration-none"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fas fa-heart"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fas fa-retweet"></i></a>
+              </div>
+              <div class="include">
+                <a href="Shop-products-name.html">
+                  <div>Men Suit</div>
+                </a>
+                <div class="price">$15.00</div>
+                <div class="star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-3">
+          <div class="col-lg-3 col-md-6 col-sm-12 py-lg-0 py-3">
+            <div class="product">
+              <a href="Shop-products-name.html"><img src="img/photo-1506193095-80bc749473f2.jpg"></a>
+              <div class="icons">
+                <a href="Shop-cart.html" class="text-decoration-none"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fas fa-heart"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fas fa-retweet"></i></a>
+              </div>
+              <div class="include">
+                <a href="Shop-products-name.html">
+                  <div>Fossil Watch</div>
+                </a>
+                <div class="price">$15.00</div>
+                <div class="star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 py-lg-0 py-3">
+            <div class="product">
+              <a href="Shop-products-name.html"><img src="img/pexels-photo-4068314.jpeg"></a>
+              <div class="icons">
+                <a href="Shop-cart.html" class="text-decoration-none"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fas fa-heart"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fas fa-retweet"></i></a>
+              </div>
+              <div class="include">
+                <a href="Shop-products-name.html">
+                  <div>Wisteria Ravenclaw</div>
+                </a>
+                <div class="price">$15.00</div>
+                <div class="star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 py-lg-0 py-3">
+            <div class="product">
+              <a href="Shop-products-name.html"><img src="img/photo-1524592094714-0f0654e20314.jpg"></a>
+              <div class="icons">
+                <a href="Shop-cart.html" class="text-decoration-none"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fas fa-heart"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fas fa-retweet"></i></a>
+              </div>
+              <div class="include">
+                <a href="Shop-products-name.html">
+                  <div>Wisteria Ravenclaw</div>
+                </a>
+                <div class="price">$15.00</div>
+                <div class="star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 py-lg-0 py-3">
+            <div class="product">
+              <img src="img/photo-1535303205469-a8460651cec5.jpg">
+              <div class="icons">
+                <a><i class="fas fa-shopping-cart"></i></a>
+                <a><i class="fas fa-heart"></i></a>
+                <a><i class="fas fa-retweet"></i></a>
+              </div>
+              <div class="include">
+                <h6>Watch</h6>
+                <div class="price">$15.00</div>
+                <div class="star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center border-bottom border-top">
+        <nav aria-label="Page navigation example" class="border-left border-right">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- end content products -->
+  <!-- start footer -->
+  <footer>
+    <div class="nav-footer">
+      <div class="container">
+        <div class="nav-contact">
+          <div>We’re confident we’ve provided all the best for you. Stay connect with us</div>
+          <div>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-behance"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mid">
+      <div class="container">
+        <div class="row pt-4 pb-5">
+          <div class="col-lg-3 col-md-6">
+            <h6>information</h6>
+            <ul>
+              <li><a href="#">delivery information</a></li>
+              <li><a href="#">discount</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">my account</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h6>my account</h6>
+            <ul>
+              <li><a href="#">sign in</a></li>
+              <li><a href="Shop-cart.html">view cart</a></li>
+              <li><a href="Shop-wishlist.html">my wishlist</a></li>
+              <li><a href="Shop-checkout.html">check out</a></li>
+              <li><a href="#">track my order</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h6>help</h6>
+            <ul>
+              <li><a href="#">F.A.Q.</a></li>
+              <li><a href="Shop-grid-full.html">shipping</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h6>contact info</h6>
+            <ul>
+              <li class="pb-4"><i class="fas fa-globe-americas" style="font-size: 13px;"></i><span class="ml-2"
+                  style="font-size: 13px;font-weight: 500;">1234 Your Address, Country.</span></li>
+              <li class="pb-4"><i class="fa fa-phone-alt" style="font-size: 13px;"></i><span class="ml-2"
+                  style="font-size: 13px;font-weight: 500;">+1 234 5678 9999</span></li>
+              <li><i class="fas fa-envelope" style="font-size: 13px;"></i><a href="mailto:mail@domain.com"
+                  style="font-size: 13px;font-weight: 500;color: #3cb878;text-transform: inherit;"><span class="ml-2"
+                    style="font-size: 13px;font-weight: 500;color: #3cb878;">mail@domain.com</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="container">
+        <div class="bottom">
+          <div>&copy; 2021 Moaz Abdelrahman Elkahlawy, All Rights Reserved</div>
+          <div>
+            <img src="img/card/visa5.png" alt="">
+            <img src="img/card/paypal11.png" alt="">
+            <img src="img/card/amazon3.png" alt="">
+            <img src="img/card/maestro1.png" alt="">
+            <img src="img/card/card34.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+  <!-- start scripts -->
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts -->
+</body>
+
+</html>

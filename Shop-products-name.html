@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Grean Shop</title>
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <div class="container-fluid information ">
+            <div>
+                <i class="fa fa-phone-alt"><span>+1 123 456 789</span></i>
+                <i class="fas fa-envelope"><span>info@company.com</span></i>
+            </div>
+            <div>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-behance"></i>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand text-uppercase" href="home.html"><span>Green</span>shop</a>
+            <button onclick="buttonChange()" type="button" class="navbar-toggler nav-button" data-toggle="collapse"
+                data-target="#myNavbar">
+                <div class=" line1"></div>
+                <div class=" line2"></div>
+                <div class=" line3"></div>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="home.html">Homepage</a>
+                            <a class="dropdown-item" href="Shop-Gird-leftsidebar.html">Category</a>
+                            <a class="dropdown-item" href="Shop-grid-full.html">Full Shopping</a>
+                            <a class="dropdown-item" href="Shop-products-name.html">Product detail</a>
+                            <a class="dropdown-item" href="Shop-cart.html">Shopping cart</a>
+                            <a class="dropdown-item" href="Shop-checkout.html">Checkout</a>
+                            <a class="dropdown-item" href="Shop-wishlist.html">Wishlist</a>
+                            <a class="dropdown-item" href="Shop-cart.html">Cart</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">jewellery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accessories</a>
+                    </li>
+                </ul>
+                <div class="my-2 my-lg-0 nav-fa">
+                    <a href="Shop-cart.html" class="shopping"><i class="fa fa-shopping-cart mr-4"></i></a>
+                    <div id="myOverlay" class="overlay">
+                        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                        <div class="overlay-content">
+                            <form action="/action_page.php">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end header -->
+    <!-- start content products -->
+    <section class="content-products pt-3 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="home.html">page</a></li>
+                            <li class="breadcrumb-item"><a href="Shop-grid-full.html">shop</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Proudct</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end content products -->
+    <!-- start cart name -->
+    <section class="cart-name">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="main">
+                        <div class="slider slider-for">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="img/photo-1559329668-389452d01c02.jpg" alt="">
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="img/photo-1506193095-80bc749473f2.jpg" alt="">
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="img/photo-1535303205469-a8460651cec5.jpg" alt="">
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="img/photo-1524592094714-0f0654e20314.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider slider-nav">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="img/photo-1559329668-389452d01c02.jpg" alt="">
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="img/photo-1506193095-80bc749473f2.jpg" alt="">
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="img/photo-1535303205469-a8460651cec5.jpg" alt="">
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="img/photo-1524592094714-0f0654e20314.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-md-5">
+                    <div class="include">
+                        <h6 style="font-size: 18px;">Beautiful women's watch</h6>
+                        <div class="d-flex align-items-center">
+                            <div class="price">$15.00</div>
+                            <div class="star pl-2">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 mb-5">
+                        <p style="font-size: 12px;font-weight: 600;line-height: 2;">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Veritatis asperiores reprehenderit dolorem illo distinctio
+                            odit nobis expedita, laudantium facere? Debitis velit accusantium nisi dolore. Aliquid
+                            delectus nihil beatae eaque voluptates.</p>
+                    </div>
+                    <hr>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle button-select" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    style="width: 240px;">
+                                    Select size
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Small</a>
+                                    <a class="dropdown-item" href="#">Middle</a>
+                                    <a class="dropdown-item" href="#">Larg</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-md-0 pt-3">
+                            <div class="dropdown dropdown-toggle-color">
+                                <button class="btn dropdown-toggle button-select" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    style="width: 240px;">
+                                    Select color
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Black</a>
+                                    <a class="dropdown-item" href="#">Green</a>
+                                    <a class="dropdown-item" href="#">White</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group qunter" style="margin-top: 20px;">
+                        <button type="button" class="quantity-left-minus btn btn-number" data-type="minus">
+                            -
+                        </button>
+                        <input type="text" id="quantity" name="quantity" class=" input-number" value="10" min="1"
+                            max="100">
+                        <button type="button" class="quantity-right-plus btn btn-number" data-type="plus">
+                            +
+                        </button>
+                    </div>
+                    <div class="icons" style="margin-top: 32px;">
+                        <a><i class="fas fa-shopping-cart"></i><span class="text-uppercase pl-2">Add to cart</span></a>
+                        <a><i class="far fa-heart"></i></a>
+                        <a><i class="fas fa-retweet"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end cart name -->
+    <!-- start tabs -->
+    <section class="tabs pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-link active" id="nav-description-tab" data-toggle="tab"
+                                href="#nav-description" role="tab" aria-controls="nav-description"
+                                aria-selected="true">Description</a>
+                            <a class="nav-link" id="nav-reviews-tab" data-toggle="tab" href="#nav-reviews" role="tab"
+                                aria-controls="nav-reviews" aria-selected="false">Reviews</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-description" role="tabpanel"
+                            aria-labelledby="nav-description-tab">
+                            <div class="container pl-lg-4">
+                                <p style="font-size: 13px;color: #000;font-weight: 500;padding-top: 24px;">Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Perferendis molestias vero voluptatibus
+                                    blanditiis quo accusantium maxime quasi consequatur atque quas, voluptates obcaecati
+                                    non voluptatem perspiciatis culpa voluptatum. Eaque, qui quos consequatur atque
+                                    quas, voluptates obcaecati non voluptatem perspiciatis culpa voluptatum. Eaque, qui
+                                    quos obcaecati non voluptatem perspiciatis culpa voluptatum. Eaque, qui quos</p>
+                                <p style="font-size: 13px;color: #000;font-weight: 500;padding-top: 24px;">Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Perferendis molestias vero voluptatibus
+                                    blanditiis quo accusantium maxime quasi consequatur atque quas, voluptates obcaecati
+                                    non voluptatem perspiciatis culpa voluptatum. Eaque, qui quos consequatur atque
+                                    quas, voluptates obcaecati non voluptatem perspiciatis culpa voluptatum. Eaque, qui
+                                    quos obcaecati non voluptatem perspiciatis culpa voluptatum. Eaque, qui quos</p>
+                                <p style="font-size: 13px;color: #000;font-weight: 500;padding: 24px 0;">Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Perferendis molestias vero voluptatibus
+                                    blanditiis quo accusantium maxime quasi consequatur atque quas, voluptates obcaecati
+                                    non voluptatem perspiciatis culpa voluptatum. Eaque, qui quos consequatur atque
+                                    quas, voluptates obcaecati non voluptatem perspiciatis culpa voluptatum. Eaque, qui
+                                    quos obcaecati non voluptatem perspiciatis culpa voluptatum. Eaque, qui quos</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-reviews" role="tabpanel" aria-labelledby="nav-reviews-tab">
+                            <div class="container pl-lg-4 pb-4">
+                                <div style="color: #000;font-size: 14px;padding: 21px 0;">
+                                    <span>1 reviews for Etiam tristique nisl</span>
+                                </div>
+                                <div class="media">
+                                    <img src="img/Avatar_icon.jpg" class="mr-3" style="height: 64px;width: 64px;">
+                                    <div class="media-body bg-white">
+                                        <div class="media-contant">
+                                            <div class="d-flex justify-content-start align-items-center">
+                                                <div class="stars">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <div class="term">
+                                                    <span>Jun 3,2021</span>
+                                                </div>
+                                            </div>
+                                            <h5 class="mt-0 text-uppercase"
+                                                style="color: #000; font-size: 14px;padding-top: 7px; font-weight: 600;">
+                                                Johan green</h5>
+                                            <p style="color: #000;font-size: 14px;padding-top: 3px;">This will go great
+                                                with my Hoodie that I ordered a few weeks ag</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form>
+                                    <h6>Add a review</h6>
+                                    <div class="input-form">
+                                        <input type="text" class="form-control" placeholder="Your name ...">
+                                        <input type="email" class="form-control" placeholder="Your e-mail ...">
+                                    </div>
+                                    <div class="form-group textarea-form">
+                                        <label>Your Review</label>
+                                        <textarea class="form-control" rows="5"></textarea>
+                                    </div>
+                                    <input type="submit" value="submit">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end tabs -->
+    <!-- start related products -->
+    <section class="related-products py-5">
+        <div class="container">
+            <h6 class="mb-3">Related Products</h6>
+            <div class="owl-carousel">
+                <div>
+                    <div class="product">
+                        <img src="img/pexels-photo-2146344.jpeg">
+                        <div class="icons">
+                            <a><i class="fas fa-shopping-cart"></i></a>
+                            <a><i class="fas fa-heart"></i></a>
+                            <a><i class="fas fa-retweet"></i></a>
+                        </div>
+                        <div class="include">
+                            <h6>Le Bomber White jacketh</h6>
+                            <div class="price">$15.00</div>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product">
+                        <img src="img/pexels-photo-952214.jpeg">
+                        <div class="icons">
+                            <a><i class="fas fa-shopping-cart"></i></a>
+                            <a><i class="fas fa-heart"></i></a>
+                            <a><i class="fas fa-retweet"></i></a>
+                        </div>
+                        <div class="include">
+                            <h6>Women’s Navy Blue Jacket</h6>
+                            <div class="price">$15.00</div>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product">
+                        <img src="img/photo-1559329668-389452d01c02.jpg">
+                        <div class="icons">
+                            <a><i class="fas fa-shopping-cart"></i></a>
+                            <a><i class="fas fa-heart"></i></a>
+                            <a><i class="fas fa-retweet"></i></a>
+                        </div>
+                        <div class="include">
+                            <h6>Beautiful women's watch</h6>
+                            <div class="price">$15.00</div>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product">
+                        <img src="img/photo-1494028698538-2cd52a400b17.jpg">
+                        <div class="icons">
+                            <a><i class="fas fa-shopping-cart"></i></a>
+                            <a><i class="fas fa-heart"></i></a>
+                            <a><i class="fas fa-retweet"></i></a>
+                        </div>
+                        <div class="include">
+                            <h6>Men Suit</h6>
+                            <div class="price">$15.00</div>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product">
+                        <img src="img/photo-1506193095-80bc749473f2.jpg">
+                        <div class="icons">
+                            <a><i class="fas fa-shopping-cart"></i></a>
+                            <a><i class="fas fa-heart"></i></a>
+                            <a><i class="fas fa-retweet"></i></a>
+                        </div>
+                        <div class="include">
+                            <h6>Fossil Watch</h6>
+                            <div class="price">$15.00</div>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product">
+                        <img src="img/pexels-photo-4068314.jpeg">
+                        <div class="icons">
+                            <a><i class="fas fa-shopping-cart"></i></a>
+                            <a><i class="fas fa-heart"></i></a>
+                            <a><i class="fas fa-retweet"></i></a>
+                        </div>
+                        <div class="include">
+                            <h6>Wisteria Ravenclaw</h6>
+                            <div class="price">$15.00</div>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product">
+                        <img src="img/photo-1524592094714-0f0654e20314.jpg">
+                        <div class="icons">
+                            <a><i class="fas fa-shopping-cart"></i></a>
+                            <a><i class="fas fa-heart"></i></a>
+                            <a><i class="fas fa-retweet"></i></a>
+                        </div>
+                        <div class="include">
+                            <h6>Wisteria Ravenclaw</h6>
+                            <div class="price">$15.00</div>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end related products -->
+    <!-- start footer -->
+    <footer>
+        <div class="nav-footer">
+            <div class="container">
+                <div class="nav-contact">
+                    <div>We’re confident we’ve provided all the best for you. Stay connect with us</div>
+                    <div>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-behance"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="container">
+                <div class="row pt-4 pb-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h6>information</h6>
+                        <ul>
+                            <li><a href="#">delivery information</a></li>
+                            <li><a href="#">discount</a></li>
+                            <li><a href="#">sitemap</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">my account</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h6>my account</h6>
+                        <ul>
+                            <li><a href="#">sign in</a></li>
+                            <li><a href="Shop-cart.html">view cart</a></li>
+                            <li><a href="Shop-wishlist.html">my wishlist</a></li>
+                            <li><a href="Shop-checkout.html">check out</a></li>
+                            <li><a href="#">track my order</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h6>help</h6>
+                        <ul>
+                            <li><a href="#">F.A.Q.</a></li>
+                            <li><a href="Shop-grid-full.html">shipping</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h6>contact info</h6>
+                        <ul>
+                            <li class="pb-4"><i class="fas fa-globe-americas" style="font-size: 13px;"></i><span
+                                    class="ml-2" style="font-size: 13px;font-weight: 500;">1234 Your Address,
+                                    Country.</span></li>
+                            <li class="pb-4"><i class="fa fa-phone-alt" style="font-size: 13px;"></i><span class="ml-2"
+                                    style="font-size: 13px;font-weight: 500;">+1 234 5678 9999</span></li>
+                            <li><i class="fas fa-envelope" style="font-size: 13px;"></i><a href="mailto:mail@domain.com"
+                                    style="font-size: 13px;font-weight: 500;color: #3cb878;text-transform: inherit;"><span
+                                        class="ml-2"
+                                        style="font-size: 13px;font-weight: 500;color: #3cb878;">mail@domain.com</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="container">
+                <div class="bottom">
+                    <div>&copy; 2021 Moaz Abdelrahman Elkahlawy, All Rights Reserved</div>
+                    <div>
+                        <img src="img/card/visa5.png" alt="">
+                        <img src="img/card/paypal11.png" alt="">
+                        <img src="img/card/amazon3.png" alt="">
+                        <img src="img/card/maestro1.png" alt="">
+                        <img src="img/card/card34.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- start scripts -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/query.js"></script>
+    <!-- end scripts -->
+</body>
+
+</html>
